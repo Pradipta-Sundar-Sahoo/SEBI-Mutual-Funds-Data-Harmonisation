@@ -5,10 +5,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 from extract_amendments0 import main
 
-OPENAI_API_KEY = "53ddfdcdc586463ba277952a1cf23fe2"
-os.environ["OPENAI_API_VERSION"] = "2024-05-01-preview"
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://tecosys.openai.azure.com/"
-os.environ["AZURE_OPENAI_API_KEY"] = OPENAI_API_KEY
+OPENAI_API_KEY = "OPENAI_API_KEY"
+os.environ["OPENAI_API_VERSION"] = "OPENAI_API_VERSION"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "AZURE_OPENAI_ENDPOINT"
+os.environ["AZURE_OPENAI_API_KEY"] = AZURE_OPENAI_API_KEY
 
 embeddings = AzureOpenAIEmbeddings(
     azure_deployment="text-embedding-3-large",
