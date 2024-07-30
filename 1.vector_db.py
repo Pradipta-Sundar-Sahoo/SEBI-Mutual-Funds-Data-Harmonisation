@@ -3,10 +3,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import AzureOpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-OPENAI_API_KEY = "53ddfdcdc586463ba277952a1cf23fe2"
-os.environ["OPENAI_API_VERSION"] = "2024-05-01-preview"
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://tecosys.openai.azure.com/"
-os.environ["AZURE_OPENAI_API_KEY"] = OPENAI_API_KEY
+OPENAI_API_KEY = "your_api_key"
+os.environ["OPENAI_API_VERSION"] = "OPENAI_API_VERSION"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "AZURE_OPENAI_ENDPOINT"
+os.environ["AZURE_OPENAI_API_KEY"] = AZURE_OPENAI_API_KEY
 file_path = os.path.join(os.path.dirname(__file__), 'main.pdf')
 loader = PyPDFLoader(file_path)
 documents = loader.load()
